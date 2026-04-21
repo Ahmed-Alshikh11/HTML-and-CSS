@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Alshikh – Movie Theater</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+        /* Unique styling for Ahmed */
+        body {
+            scroll-behavior: smooth;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .jumbotron {
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: white;
+        }
+        .section-title {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Ahmed Alshikh</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+            <!-- Bookmark Links -->
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#showtimes">Showtimes</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#deals">Deals</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<!-- JUMBOTRON -->
+<div class="jumbotron text-center mt-5">
+    <h1 class="display-4">Welcome to Ahmed’s Movie Theater</h1>
+    <p class="lead">Your favorite movies, your favorite times — all in one place.</p>
+</div>
+
+<!-- ABOUT SECTION -->
+<h2 id="about" class="section-title">About</h2>
+<div class="container">
+    <p class="text-center">
+        This website was created by <strong>Ahmed Alshikh</strong> as a Bootstrap project. 
+        Explore the latest movies, check showtimes, and enjoy the best deals.
+    </p>
+</div>
+
+<!-- SHOWTIMES SECTION -->
+<h2 id="showtimes" class="section-title">Showtimes</h2>
+
+<div class="container mb-5">
+    <div class="card-deck">
+
+        <!-- MOVIE 1 -->
+        <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" alt="Kong Skull Island">
+            <div class="card-body">
+                <h5 class="card-title">Kong: Skull Island</h5>
+                <p class="card-text">
+                    A team of explorers ventures deep into an uncharted island in the Pacific, unaware that they are entering the domain of the mighty Kong.
+                </p>
+
+                <!-- Showtimes (6 pill badges) -->
+                <span class="badge badge-info badge-pill">12:00 p.m.</span>
+                <span class="badge badge-info badge-pill">1:30 p.m.</span>
+                <span class="badge badge-info badge-pill">3:00 p.m.</span>
+                <span class="badge badge-info badge-pill">5:30 p.m.</span>
+                <span class="badge badge-info badge-pill">7:00 p.m</span>
+                <span class="badge badge-info badge-pill">9:30 p.m.</span>
+            </div>
+        </div>
+
+        <!-- MOVIE 2 -->
+        <div class="card">
+            <img class="card-img-top" src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" alt="Ghost in the Shell">
+            <div class="card-body">
+                <h5 class="card-title">Ghost in the Shell</h5>
+                <p class="card-text">
+                    In a futuristic world, a cyber-enhanced soldier leads an elite task force as she uncovers shocking truths about her past and identity.
+                </p>
+
+                <!-- Showtimes -->
+                <span class="badge badge-info badge-pill">12:00 p.m.</span>
+                <span class="badge badge-info badge-pill">1:30 p.m.</span>
+                <span class="badge badge-info badge-pill">3:00 p.m.</span>
+                <span class="badge badge-info badge-pill">5:30 p.m.</span>
+                <span class="badge badge-info badge-pill">7:00 p.m</span>
+                <span class="badge badge-info badge-pill">9:30 p.m.</span>
+            </div>
+        </div>
+
+        <!-- MOVIE 3 -->
+        <div class="card">
+            <img class="card-img-top" src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" alt="Beauty and the Beast">
+            <div class="card-body">
+                <h5 class="card-title">Beauty and the Beast</h5>
+                <p class="card-text">
+                    A young woman becomes the prisoner of a mysterious beast, discovering that love and kindness can transform even the darkest of curses.
+                </p>
+
+                <!-- Showtimes -->
+                <span class="badge badge-info badge-pill">12:00 p.m.</span>
+                <span class="badge badge-info badge-pill">1:30 p.m.</span>
+                <span class="badge badge-info badge-pill">3:00 p.m.</span>
+                <span class="badge badge-info badge-pill">5:30 p.m.</span>
+                <span class="badge badge-info badge-pill">7:00 p.m</span>
+                <span class="badge badge-info badge-pill">9:30 p.m.</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- DEALS SECTION -->
+<h2 id="deals" class="section-title">Deals</h2>
+<div class="container text-center mb-5">
+    <p>Check back soon for amazing student discounts and special offers!</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
