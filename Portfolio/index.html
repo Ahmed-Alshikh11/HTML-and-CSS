@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Alshikh – Portfolio</title>
+
+<style>
+
+/* GLOBAL STYLE */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+}
+
+.navbar a {
+    color: #ffde59;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    display: block;
+    margin: 40px auto;
+    width: 300px;
+    border-radius: 25px;
+    filter: brightness(85%) saturate(130%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* TWO COLUMN LAYOUT */
+.columns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.column {
+    width: 35%;
+    height: 180px;
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 15px;
+    color: #ffde59;
+    font-size: 18px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* TABLE */
+table {
+    margin: 0 auto;
+    width: 60%;
+    border-collapse: collapse;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #222;
+    padding: 12px;
+    font-size: 18px;
+}
+
+td {
+    border: 2px solid #222;
+    padding: 12px;
+    font-size: 17px;
+}
+
+/* TEXT OVER IMAGE */
+.image-text-box {
+    position: relative;
+    display: inline-block;
+}
+
+.image-text-box img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #ffde59;
+    text-shadow: 0 0 10px black;
+}
+
+/* IMAGE OVERLAY FADE */
+.overlay-container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.overlay-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    color: #00eaff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.overlay-container:hover .overlay {
+    background: rgba(0,0,0,0.6);
+}
+
+/* AUTOPLAY VIDEO */
+.video {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* VIDEO TEXT OVERLAY */
+.video-overlay-box {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.video-overlay-box video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffde59;
+    text-shadow: 0 0 10px black;
+}
+
+/* PARAGRAPH HOVER EFFECT */
+.hover-para {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.hover-para:hover {
+    color: #00eaff;
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffde59;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <h1>Welcome to Ahmed Alshikh’s Portfolio</h1>
+    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" class="profile-img">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="columns">
+        <div class="column">
+            I’m Ahmed, a student passionate about web development, design, and creative technology.
+        </div>
+        <div class="column">
+            I love building colorful, modern websites and experimenting with visual effects.
+        </div>
+    </div>
+</section>
+
+<!-- TABLE -->
+<section>
+    <h2>My Weekly Schedule</h2>
+
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Project Work</td>
+        </tr>
+    </table>
+</section>
+
+<!-- TEXT OVER IMAGE -->
+<section>
+    <h2>Text Over Image</h2>
+
+    <div class="image-text-box">
+        <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg">
+        <div class="image-text">Creativity Starts Here</div>
+    </div>
+</section>
+
+<!-- IMAGE OVERLAY FADE -->
+<section>
+    <h2>Image Overlay Fade</h2>
+
+    <div class="overlay-container">
+        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg">
+        <div class="overlay">Hover to Reveal</div>
+    </div>
+</section>
+
+<!-- AUTOPLAY VIDEO -->
+<section>
+    <h2>Autoplay Video</h2>
+
+    <video autoplay muted loop class="video">
+        <source src="https://cdn.pixabay.com/video/2026/02/26/336755_large.mp4">
+    </video>
+</section>
+
+<!-- VIDEO TEXT OVERLAY -->
+<section>
+    <h2>Video With Text Overlay</h2>
+
+    <div class="video-overlay-box">
+        <video autoplay muted loop>
+            <source src="https://cdn.pixabay.com/video/2026/02/26/336755_large.mp4">
+        </video>
+        <div class="video-text">Welcome to My World</div>
+    </div>
+</section>
+
+<!-- PARAGRAPH HOVER -->
+<section>
+    <h2>Paragraph Hover Effect</h2>
+    <p class="hover-para">Hover over this paragraph to see the effect.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2024 Ahmed Alshikh – Portfolio Project
+</footer>
+
+</body>
+</html>
